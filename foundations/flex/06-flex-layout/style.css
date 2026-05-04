@@ -24,3 +24,54 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* Soluzioni */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 8px solid #ddd;
+}
+
+.header {
+  display: flex;
+  border-bottom: 8px solid #eb0b0b;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.left-links {
+  display: flex;
+  margin-right: auto;
+  gap: 16px;
+}
+
+.right-links {
+  display: flex;
+  margin-left: auto;
+  gap: 16px;
+  margin-right: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+  border-bottom: 8px solid #1647e9;
+}
+
+.footer {
+  display: flex;
+  border-top: 8px solid #e7eb0b;
+}
