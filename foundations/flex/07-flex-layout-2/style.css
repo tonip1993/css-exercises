@@ -18,12 +18,71 @@ body {
 
 .sidebar {
   width: 300px;
+  flex-shrink: 0;
   background: royalblue;
   box-sizing: border-box;
+  padding: 16px;
+}
+
+.sidebar a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/* Solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+}
+
+.center {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 48px;
+}
+
+.card {
+  padding: 16px;
+  flex-basis: 300px;
+  flex-shrink: 1;
+  min-width: 200px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
 }
