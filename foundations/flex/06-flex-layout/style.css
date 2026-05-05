@@ -38,10 +38,12 @@ input {
 
 .header {
   display: flex;
-  border-bottom: 8px solid #eb0b0b;
+  padding: 16px 32px;  /* Aggiunge spazio interno */
+  align-items: center;  /* Allinea verticalmente i link */
 }
 
 a {
+  color: #666;
   text-decoration: none;
 }
 
@@ -51,15 +53,16 @@ ul {
 
 .left-links {
   display: flex;
-  margin-right: auto;
   gap: 16px;
+  margin: 0;  /* Reset dei margini di default */
+  padding: 0;
 }
 
 .right-links {
   display: flex;
-  margin-left: auto;
   gap: 16px;
-  margin-right: 16px;
+  margin: 0 0 0 auto;  /* Spinge tutto a destra */
+  padding: 0;
 }
 
 .content {
@@ -67,11 +70,22 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 600px;
-  border-bottom: 8px solid #1647e9;
+  flex: 1;              /* Cresce per riempire lo spazio disponibile */
+  gap: 32px;            /* Spazio tra logo, input e buttons */
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;            /* Spazio tra i due bottoni */
+}
+
+button {
+  padding: 12px 24px;   /* Più generoso e leggibile */
 }
 
 .footer {
   display: flex;
-  border-top: 8px solid #e7eb0b;
+  padding: 16px 32px;      /* Aggiunge spazio interno */
+  background-color: #eeeeee; /* Sfondo grigio chiaro */
+  align-items: center;       /* Allinea verticalmente i link */
 }
